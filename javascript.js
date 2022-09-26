@@ -20,6 +20,7 @@ function getComputerChoice() {
 
 // create a function playRound(),
 // requires 2 parameters: playerSelection and computerSelection
+function playRound(playerSelection, computerSelection) {
 // compare player's choice with computer
     // if player chose rock and computer chose scissors
     // or player chose paper and computer chose rock
@@ -32,5 +33,6 @@ function getComputerChoice() {
     // then return player lost message
     
     // else return draw message
+}
 
 // console.log(getComputerChoice());
