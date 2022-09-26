@@ -21,18 +21,20 @@ function getComputerChoice() {
 // create a function playRound(),
 // requires 2 parameters: playerSelection and computerSelection
 function playRound(playerSelection, computerSelection) {
-// compare player's choice with computer
-    // if player chose rock and computer chose scissors
-    // or player chose paper and computer chose rock
-    // or player chose scissors and computer chose paper
-    // then return player won message
+    // convert playerSelection to lowercase
+    playerSelection = playerSelection.toLowerCase();
+    // compare player's choice with computer
+        // if player chose rock and computer chose scissors
+        // or player chose paper and computer chose rock
+        // or player chose scissors and computer chose paper
+        // then return player won message
 
-    // else if player chose rock and computer chose paper
-    // or player chose paper and computer chose scissors
-    // or player chose scissors and computer chose rock
-    // then return player lost message
-    
-    // else return draw message
+        // else if player chose rock and computer chose paper
+        // or player chose paper and computer chose scissors
+        // or player chose scissors and computer chose rock
+        // then return player lost message
+        
+        // else return draw message
 }
 
 // console.log(getComputerChoice());
