@@ -5,9 +5,17 @@ function getComputerChoice() {
     let randomInt = Math.floor(Math.random() * 3) + 1;
     
     // find the string that matches this number e.g. 1 = 'rock'
-    // return the string
-
-
+    switch (randomInt){
+        case 1:
+            // return the string
+            return 'Rock';
+        case 2:
+            return 'Paper';
+        case 3:
+            return 'Scissors';
+        default:
+            return `You shouldn't have received this`;
+    }
 }
 
-// getComputerChoice();
+// console.log(getComputerChoice());
