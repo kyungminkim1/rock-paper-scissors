@@ -29,22 +29,24 @@ function playRound(playerSelection, computerSelection) {
     // or player chose paper and computer chose rock
     // or player chose scissors and computer chose paper
     if (
-        playerSelection === 'rock' && computerSelection === 'scissors'
-        || playerSelection === 'paper' && computerSelection === 'rock'
-        || playerSelection === 'scissors' && computerSelection === 'paper'
+        playerSelection === 'rock' && computerSelection === 'Scissors'
+        || playerSelection === 'paper' && computerSelection === 'Rock'
+        || playerSelection === 'scissors' && computerSelection === 'Paper'
         ) {
             // then return player won message
             return `You Win! ${playerSelection} beats ${computerSelection}`
         }
-    
-
-
     // else if player chose rock and computer chose paper
     // or player chose paper and computer chose scissors
     // or player chose scissors and computer chose rock
-    // then return player lost message
+    // then return player lost message 
+    
     
     // else return draw message
 }
 
-// console.log(getComputerChoice());
+/*
+const playerChoice = 'Rock';
+const result = playRound(getComputerChoice(), getComputerChoice());
+console.log(result);
+*/
