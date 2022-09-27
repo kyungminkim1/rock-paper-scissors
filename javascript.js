@@ -70,6 +70,8 @@ function game() {
         if (result.search('Won') !== -1) {
             playerScore++;
         }
+        // display the round's results
+        console.log(result);
     }
     // declare the player's win/loss
 }
