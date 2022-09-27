@@ -50,12 +50,11 @@ function playRound(playerSelection, computerSelection) {
     
     // else return draw message
     else {
-        return `You Draw!`;
+        return `You Draw! You both picked ${playerSelection}`;
     }
 }
 
-/*
+
 const playerChoice = 'roCk';
 const result = playRound(getComputerChoice(), getComputerChoice());
 console.log(result);
-*/
