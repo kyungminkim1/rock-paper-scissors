@@ -34,12 +34,19 @@ function playRound(playerSelection, computerSelection) {
         || playerSelection === 'Scissors' && computerSelection === 'Paper'
         ) {
             // then return player won message
-            return `You Win! ${playerSelection} beats ${computerSelection}`
-        }
+            return `You Win! ${playerSelection} beats ${computerSelection}`;
+    }
     // else if player chose rock and computer chose paper
     // or player chose paper and computer chose scissors
     // or player chose scissors and computer chose rock
-    // then return player lost message 
+    // then return player lost message
+    else if (
+        playerSelection === 'Rock' && computerSelection === 'Paper'
+        || playerSelection === 'Paper' && computerSelection === 'Scissors'
+        || playerSelection === 'Scissors' && computerSelection === 'Rock'
+        ) {
+            return `You Lose! ${computerSelection} beats ${playerSelection}`;
+    }
     
     
     // else return draw message
