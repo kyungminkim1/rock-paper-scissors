@@ -59,12 +59,13 @@ function game() {
     // track the player's choice and score
     let playerChoice = null;
     let playerScore = 0;
-    
-    // run 5 rounds of the game
-    
-        // get player's input from rock/paper/scissors
-        // if the player won the round, increment their score
 
+    // run 5 rounds of the game
+    for (let i = 0; i < 5; i++) {
+        // get player's input from rock/paper/scissors
+        let playerChoice = prompt('Choose rock, paper, or scissors');
+        // if the player won the round, increment their score
+    }
     // declare the player's win/loss
 }
 
