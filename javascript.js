@@ -23,18 +23,28 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
     // convert playerSelection to lowercase
     playerSelection = playerSelection.toLowerCase();
-    // compare player's choice with computer
-        // if player chose rock and computer chose scissors
-        // or player chose paper and computer chose rock
-        // or player chose scissors and computer chose paper
-        // then return player won message
 
-        // else if player chose rock and computer chose paper
-        // or player chose paper and computer chose scissors
-        // or player chose scissors and computer chose rock
-        // then return player lost message
-        
-        // else return draw message
+    // compare player's choice with computer
+    // if player chose rock and computer chose scissors
+    // or player chose paper and computer chose rock
+    // or player chose scissors and computer chose paper
+    if (
+        playerSelection === 'rock' && computerSelection === 'scissors'
+        || playerSelection === 'paper' && computerSelection === 'rock'
+        || playerSelection === 'scissors' && computerSelection === 'paper'
+        ) {
+            // then return player won message
+            return `You Win! ${playerSelection} beats ${computerSelection}`
+        }
+    
+
+
+    // else if player chose rock and computer chose paper
+    // or player chose paper and computer chose scissors
+    // or player chose scissors and computer chose rock
+    // then return player lost message
+    
+    // else return draw message
 }
 
 // console.log(getComputerChoice());
