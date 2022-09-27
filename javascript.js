@@ -55,13 +55,18 @@ function playRound(playerSelection, computerSelection) {
 }
 
 // create function game()
-// track the player's score
-// run 5 rounds of the game
-    // get player's input from rock/paper/scissors
-    // if the player won the round, increment their score
+function game() {
+    // track the player's choice and score
+    let playerChoice = null;
+    let playerScore = 0;
+    
+    // run 5 rounds of the game
+    
+        // get player's input from rock/paper/scissors
+        // if the player won the round, increment their score
 
-// declare the player's win/loss
+    // declare the player's win/loss
+}
 
-const playerChoice = 'roCk';
 const result = playRound(getComputerChoice(), getComputerChoice());
 console.log(result);
