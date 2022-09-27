@@ -48,8 +48,10 @@ function playRound(playerSelection, computerSelection) {
             return `You Lose! ${computerSelection} beats ${playerSelection}`;
     }
     
-    
     // else return draw message
+    else {
+        return `You Draw!`;
+    }
 }
 
 /*
