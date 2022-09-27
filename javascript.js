@@ -50,7 +50,7 @@ function playRound(playerSelection, computerSelection) {
 
     // else return draw message
     else {
-        return `You Draw! You both picked ${playerSelection}`;
+        return `You Drew! You both picked ${playerSelection}`;
     }
 }
 
@@ -63,11 +63,11 @@ function game() {
     // run 5 rounds of the game
     for (let i = 0; i < 5; i++) {
         // get player's input from rock/paper/scissors
-        let playerChoice = prompt('Choose rock, paper, or scissors');
+        playerChoice = prompt('Choose rock, paper, or scissors');
+        // get the round's outcome
+        let result = playRound(playerChoice, getComputerChoice());
         // if the player won the round, increment their score
+        
     }
     // declare the player's win/loss
 }
-
-const result = playRound(getComputerChoice(), getComputerChoice());
-console.log(result);
