@@ -81,3 +81,5 @@ function game() {
         console.log('You lost! Better luck next time');
     }
 }
+
+game();
