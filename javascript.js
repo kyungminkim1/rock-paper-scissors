@@ -1,4 +1,4 @@
-// create a function getComputerChoice
+// create a function getComputerChoice()
 function getComputerChoice() {
 
     // choose a random number from 1-3
@@ -47,13 +47,20 @@ function playRound(playerSelection, computerSelection) {
         ) {
             return `You Lose! ${computerSelection} beats ${playerSelection}`;
     }
-    
+
     // else return draw message
     else {
         return `You Draw! You both picked ${playerSelection}`;
     }
 }
 
+// create function game()
+// track the player's score
+// run 5 rounds of the game
+    // get player's input from rock/paper/scissors
+    // if the player won the round, increment their score
+
+// declare the player's win/loss
 
 const playerChoice = 'roCk';
 const result = playRound(getComputerChoice(), getComputerChoice());
