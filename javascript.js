@@ -75,7 +75,7 @@ function game() {
     }
 
     // declare the player's win/loss
-    if (playerScore > 3) {
+    if (playerScore >= 3) {
         console.log('You\'re a winner!!!');
     } else {
         console.log('You lost! Better luck next time');
