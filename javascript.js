@@ -67,7 +67,7 @@ function game() {
         // get the round's outcome
         let result = playRound(playerChoice, getComputerChoice());
         // if the player won the round, increment their score
-        if (result.search('Won') !== -1) {
+        if (result.search('Win') !== -1) {
             playerScore++;
         }
         // display the round's results
