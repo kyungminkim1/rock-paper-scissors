@@ -21,17 +21,17 @@ function getComputerChoice() {
 // create a function playRound(),
 // requires 2 parameters: playerSelection and computerSelection
 function playRound(playerSelection, computerSelection) {
-    // convert playerSelection to lowercase
-    playerSelection = playerSelection.toLowerCase();
+    // make playerSelection case-insensitive
+    playerSelection = playerSelection.slice(0, 1).toUpperCase() + playerSelection.slice(1).toLowerCase();
 
     // compare player's choice with computer
     // if player chose rock and computer chose scissors
     // or player chose paper and computer chose rock
     // or player chose scissors and computer chose paper
     if (
-        playerSelection === 'rock' && computerSelection === 'Scissors'
-        || playerSelection === 'paper' && computerSelection === 'Rock'
-        || playerSelection === 'scissors' && computerSelection === 'Paper'
+        playerSelection === 'Rock' && computerSelection === 'Scissors'
+        || playerSelection === 'Paper' && computerSelection === 'Rock'
+        || playerSelection === 'Scissors' && computerSelection === 'Paper'
         ) {
             // then return player won message
             return `You Win! ${playerSelection} beats ${computerSelection}`
@@ -46,7 +46,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 /*
-const playerChoice = 'Rock';
+const playerChoice = 'roCk';
 const result = playRound(getComputerChoice(), getComputerChoice());
 console.log(result);
 */
