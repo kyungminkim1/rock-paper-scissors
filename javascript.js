@@ -60,20 +60,6 @@ function game() {
     let playerChoice = null;
     let playerScore = 0;
 
-    // run 5 rounds of the game
-    for (let i = 0; i < 5; i++) {
-        // get player's input from rock/paper/scissors
-        playerChoice = prompt('Choose rock, paper, or scissors');
-        // get the round's outcome
-        let result = playRound(playerChoice, getComputerChoice());
-        // if the player won the round, increment their score
-        if (result.search('Win') !== -1) {
-            playerScore++;
-        }
-        // display the round's results
-        console.log(result);
-    }
-
     // declare the player's win/loss
     if (playerScore >= 3) {
         console.log('You\'re a winner!!!');
