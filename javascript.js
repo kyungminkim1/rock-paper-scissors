@@ -19,10 +19,14 @@ function getComputerChoice() {
 }
 
 // create a function playRound(),
-// requires 2 parameters: playerSelection and computerSelection
-function playRound(playerSelection, computerSelection) {
-    // make playerSelection case-insensitive
-    playerSelection = playerSelection.slice(0, 1).toUpperCase() + playerSelection.slice(1).toLowerCase();
+// requires 1 parameter: (e)vent from addEventListener
+// playRound is called by btn and so can be referred to with 'this'
+function playRound(e) {
+
+    // check button text for player selection
+    playerSelection = this.textContent;
+    // get computer selection
+    let computerSelection = getComputerChoice();
 
     // compare player's choice with computer
     // if player chose rock and computer chose scissors
@@ -70,5 +74,10 @@ function game() {
 
 game();
 
-// get buttons and add event listeners to each button
+// get buttons
+const btns = document.querySelectorAll('button');
+
+// add event listeners to each button
 // event listener will call playRound
+
+btns.forEach(btn => btn.addEventListener('click', playRound));
