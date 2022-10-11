@@ -69,3 +69,6 @@ function game() {
 }
 
 game();
+
+// get buttons and add event listeners to each button
+// event listener will call playRound
